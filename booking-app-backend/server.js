@@ -7,7 +7,7 @@ mongoose.set("strictQuery", false);
 
 // db connect
 mongoose.connect(process.env.DATABASE_LOCAL).then(() => {
-  console.log("DB connection successful!".green);
+  console.log("DB connection successful!".rainbow.bold);
 });
 
 // server
@@ -15,5 +15,5 @@ const port = process.env.PORT || 8080;
 
 // db listening
 app.listen(port, () => {
-  console.log(`App running on port ${port}...`.yellow.bold.underline);
+  console.log(`App running on port ${port}...`.america.bold);
 });
